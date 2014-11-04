@@ -1,0 +1,39 @@
+*, body {
+}
+
+hr {
+	margin: 0;
+}
+
+:focus {
+	background:white;
+}
+
+.vcard {
+	border:none;
+	padding: 0;
+	margin: 0;
+	display: block;
+}
+
+.hidden {
+	display: none !important;
+}
+
+// centering
+
+.horizon {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  height: 1px;
+  overflow: visible;
+  visibility: visible;
+  display: block;
+}
+
+.intro {
+  @include dead-center(589px, 450px);
+}

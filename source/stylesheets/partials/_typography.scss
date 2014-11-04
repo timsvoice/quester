@@ -1,0 +1,21 @@
+.intro {
+  &-branding {
+    h1 {
+      color: $brand;
+      text-shadow: 5px 5px 10px #111;
+      font-size: 8rem;
+      line-height: 8rem;
+      margin-bottom: 0;
+      @include breakpoint(small) {
+        font-size: 3rem;
+      }
+      font-weight: $heavy-text;
+    }
+  }
+  &-body {
+    p {
+      color: white;
+      font-size: 1.25rem;      
+    }
+  }
+}
