@@ -1,0 +1,14 @@
+.button {
+  background: $brand;
+  color: darken($brand, 60%);
+  font-size: 1rem;
+  border-bottom: 0.25rem darken($brand, 10%) solid;
+  &:hover {
+    background: $brand;
+  }
+}
+
+.small.button {
+  font-size: 1rem;
+  padding: 0.75em 1rem;
+}

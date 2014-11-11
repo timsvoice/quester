@@ -3,13 +3,18 @@
 ============================ */
 
 $brand: hsla(190,63,73%,1);
+$yellow: hsla(53, 100%, 62%, 1.0);
+$trans-black: hsla(0,0,0,0.35);
+$trans-brand: hsla(190,63,73%,0.5);
+
 
 /* ============================ 
 	Typography
 ============================ */
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700|Open+Sans:400,700);
 
-$body-font: "pragmatica-web", Helvetica, Arial, sans-serif;
-$text-font: "minion-pro", Times, serif;
+$title-font: 'Lobster Two', cursive;
+$text-font: "Open Sans", Times, sans-serif;
 
 $heavy-text:900;
 $medium-text:400;

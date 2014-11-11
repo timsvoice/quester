@@ -1,0 +1,27 @@
+.navigation {
+  background: none;
+  .top-bar {
+    background: none;
+    &-section {
+      ul {
+        background: none;
+        margin-right: 1rem;
+        a:not(button) {
+          background: inherit !important;
+          border: 0.125rem  $trans-brand solid;
+          padding: 0.5rem;
+          margin-right: 2rem;
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          color: lighten($brand, 20%);
+          background: $trans-black;
+          font-family: $text-font;
+          font-weight: $heavy-text;
+          &:hover {
+            background: darken($brand, 30%)
+          }
+        }        
+      }
+    }
+  }
+}

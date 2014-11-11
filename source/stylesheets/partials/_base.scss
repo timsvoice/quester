@@ -35,5 +35,30 @@ hr {
 }
 
 .intro {
-  @include dead-center(589px, 450px);
+  padding: 2rem;
+  @include dead-center(689px, 360px);
+  background: $trans-black;
+  border: 0.75rem $trans-brand solid;
+}
+
+.descriptions {
+  background: lighten($yellow, 100%);
+}
+
+.signup {
+  background-color: lighten($brand, 20%);
+  padding: 3rem 2rem 1rem;
+  &-intro {   
+    p {
+      font-size: 1.25rem;
+      font-weight: $light-text;  
+      span.bold {
+        font-weight: $heavy-text;
+      }    
+    }
+  }
+}
+
+.descriptions {
+  padding: 3rem 2rem 1rem;
 }

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Use title if it's in the page YAML frontmatter -->
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
     <title><%= data.page.title || "Quester" %></title>
     
     <%= stylesheet_link_tag "app", "style" %>
@@ -11,7 +13,7 @@
   </head>
   
   <body class="<%= page_classes %>">
-    
+    <%= partial "nav" %>
     <%= yield %>
 
     <%= javascript_include_tag  "all" %>

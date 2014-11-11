@@ -1,0 +1,15 @@
+.signup-form {
+  h2 {
+    font-size: 1.25rem;
+  }
+  &-required {
+    font-size: 0.75rem;
+    color: #999;
+  }
+}
+
+.required.email {
+  height: 2.9rem;
+  border: none;
+  box-shadow: none;
+}
