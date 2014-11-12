@@ -42,11 +42,11 @@ hr {
 }
 
 .descriptions {
-  background: lighten($yellow, 100%);
+  background: $gray;
 }
 
 .signup {
-  background-color: lighten($brand, 20%);
+  background-color: $gray;
   padding: 3rem 2rem 1rem;
   &-intro {   
     p {
@@ -60,5 +60,18 @@ hr {
 }
 
 .descriptions {
-  padding: 3rem 2rem 1rem;
+  padding: 0rem;
+}
+
+.descriptions {
+  margin: 1rem 0rem;
+  &-tour {
+    background: $gray;
+    padding: 4rem 0rem;
+    border-right: 3px solid $trans-brand;
+  }
+  &-know {
+    background: $gray;
+    padding: 4rem 0rem; 
+  }
 }

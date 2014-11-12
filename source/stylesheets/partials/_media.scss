@@ -9,3 +9,13 @@
   padding: 0;
   height: 100%;
 }
+
+img.book {
+  max-width: 350px;
+  -ms-transform: rotate(-12deg); /* IE 9 */
+  -webkit-transform: rotate(-12deg); /* Chrome, Safari, Opera */
+  transform: rotate(-12deg);
+  margin: 2rem auto 2rem;
+  display: block;
+  text-align: center;
+}

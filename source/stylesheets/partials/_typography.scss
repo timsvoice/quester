@@ -1,3 +1,7 @@
+.bold {
+  font-weight: $heavy-text;
+}
+
 .navigation {
   .branding-title {
     color: lighten($brand, 20%);
@@ -47,23 +51,29 @@
 
 .descriptions {
   i {
-    font-size: 4.5rem;
+    font-size: 8.5rem;
     // text-shadow: 1px 1px 2px darken($brand, 25%);
-    width: 100%;
+    // width: 100%;
     display: inline-block;
-    text-align: center;
+    text-align: left;
     color: darken($brand, 30%);
     font-weight: $light-text;
+    float: left;
   }
   h3 {
-    font-size: 2rem;
+    font-size: 3rem;
+    line-height: 3.5rem;
     color: darken($brand, 20%);
+    text-transform: uppercase;
+    font-weight: $heavy-text;
   }
   p {
-    text-align: center;
+    text-align: left;
     color: darken($brand, 60%);
     font-weight: $light-text;
     font-size: 1.25rem;
     font-family: $text-font;
+    float: right;
+    display: inline-block;
   }
 }
