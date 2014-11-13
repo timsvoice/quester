@@ -3,6 +3,12 @@
 source 'http://rubygems.org'
 
 gem "middleman"
+gem 'middleman-deploy', '~> 0.3.0'
+gem "puma"
+gem "nokogiri"
+gem "rack-contrib"
+
+gem "middleman-google-analytics"
 
 # Live-reloading plugin
 gem "middleman-livereload"

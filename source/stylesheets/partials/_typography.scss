@@ -32,12 +32,12 @@ span.small {
       color: $brand;
       // text-shadow: 5px 5px 10px #111;
       font-size: 8rem;
-      line-height: 8rem;
+      line-height: 9.5rem;
       margin-bottom: 0;
       margin-top: 0;
       @include breakpoint(small) {
-        font-size: 6rem;
-        line-height: 5rem;
+        font-size: 5rem;
+        line-height: 6rem;
         margin-bottom: 1rem;
       }
       font-weight: $heavy-text;
@@ -50,7 +50,8 @@ span.small {
       font-weight: $heavy-text;
       font-size: 2rem;
       @include breakpoint(small) {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
       }      
     }
   }
@@ -58,20 +59,19 @@ span.small {
 
 .descriptions {
   h3 {
-    font-size: 1.75rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 4rem;
     color: darken($brand, 20%);
     text-transform: uppercase;
     font-weight: $heavy-text;
+    text-align: center;
   }
   p {
-    text-align: left;
+    text-align: center;
     color: darken($brand, 60%);
     font-weight: $light-text;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
     font-family: $text-font;
-    float: right;
-    display: inline-block;
   }
 }
 
@@ -80,7 +80,8 @@ span.small {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
     border-top: 2px $trans-brand solid;
-    border-bottom: 2px $trans-brand solid;
+    width: 100%;
+    height: 100%;
     &:hover {
       background: lighten($brand, 20%)
     }
@@ -100,8 +101,12 @@ span.small {
       font-weight: $light-text;
       font-size: 1.25rem;
       font-family: $text-font;
-      float: right;
-      display: inline-block;
+    }
+    &:nth-child(odd) {
+      border-right: 1px $gray solid;
+    }
+    &:nth-child(even) {
+      border-right: 1px $gray solid;
     }
   }
 }
@@ -112,8 +117,14 @@ span.small {
     line-height: 2rem;
     color: $brand;
     font-weight: $heavy-text;
+    @include breakpoint(small) {
+      font-size: 1.5rem;
+    }
   }
   p {
     color: $brand;
+    @include breakpoint(small) {
+      font-size: 0.75rem;
+    }
   }
 }

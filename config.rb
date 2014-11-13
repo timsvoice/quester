@@ -105,3 +105,19 @@ configure :build do
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
+
+
+activate :deploy do |deploy|
+  deploy.method = :rsync
+  deploy.host   = "104.131.20.244"
+  deploy.path   = "/var/www/quester.nyc/public_html"
+  # Optional Settings
+  deploy.user  = "root" # no default
+  # deploy.port  = 5309 # ssh port, default: 22
+  # deploy.clean = true # remove orphaned files on remote host, default: false
+  # deploy.flags = "-rltgoDvzO --no-p --del" # add custom flags, default: -avz
+end
+
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-56696144-1' # Replace with your property ID.
+end

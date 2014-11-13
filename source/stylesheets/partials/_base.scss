@@ -39,6 +39,10 @@ hr {
   @include dead-center(689px, 360px);
   background: $trans-black;
   border: 0.75rem $trans-brand solid;
+  @include breakpoint(small) {
+    @include dead-center(320px, 480px);
+    padding: 1rem 1rem;
+  }
 }
 
 .descriptions {
@@ -68,21 +72,22 @@ hr {
     min-width: 100% !important;
   }
    &-form-background {
-    @extend .intro;
+    @extend .intro;    
     @include dead-center(601px, 360px);
+    @include breakpoint(small) {
+      @include dead-center(320px, 480px);
+      padding: 1rem 1rem;
+    }
   }
 }
 
 .descriptions {
-  padding: 0rem;
-}
-
-.descriptions {
-  padding: 1rem 0rem;
+  padding: 6rem 0rem;
+  border-top: 2px $trans-brand solid;
+  border-bottom: 2px $trans-brand solid;
   &-tour {
     background: $gray;
     padding: 4rem 0rem;
-    border-right: 2px solid darken($gray, 5%);
   }
   &-know {
     background: $gray;
