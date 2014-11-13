@@ -10,6 +10,18 @@
   height: 100%;
 }
 
+.signup-background {
+  background: url(https://s3.amazonaws.com/questernyc/garcon-dark.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 img.book {
   max-width: 350px;
   -ms-transform: rotate(-12deg); /* IE 9 */

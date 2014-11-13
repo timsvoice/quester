@@ -4,6 +4,7 @@
 
 $brand: hsla(190,63,73%,1);
 $yellow: hsla(53, 100%, 62%, 1.0);
+$trans-yellow: hsla(53, 100%, 62%, 0.5);
 $trans-black: hsla(0,0,0,0.35);
 $trans-brand: hsla(190,63,73%,0.5);
 $gray: hsla(170, 3%, 95%, 1.0);
@@ -11,10 +12,12 @@ $gray: hsla(170, 3%, 95%, 1.0);
 /* ============================ 
 	Typography
 ============================ */
-@import url(http://fonts.googleapis.com/css?family=Lobster+Two:700|Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Amaranth:400,700|Kaushan+Script|Lobster+Two:700|Open+Sans:400,700);
 
 $title-font: 'Lobster Two', cursive;
+$ama-font: "Amaranth", cursive;
 $text-font: "Open Sans", Times, sans-serif;
+$kaush-font: "Kaushan Script", cursive;
 
 $heavy-text:900;
 $medium-text:400;

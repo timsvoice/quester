@@ -47,15 +47,29 @@ hr {
 
 .signup {
   background-color: $gray;
-  padding: 3rem 2rem 1rem;
+  padding: 3rem 2rem 1rem;  
   &-intro {   
+    padding: 2rem 0rem;
+    background: $gray;
     p {
-      font-size: 1.25rem;
+      font-size: 2rem;
+      color: darken($brand, 20%);
       font-weight: $light-text;  
+      text-align: center;
       span.bold {
         font-weight: $heavy-text;
       }    
     }
+  }
+  &-form {
+    padding-top: 2rem;
+    position: absolute;
+    height: 600px;
+    min-width: 100% !important;
+  }
+   &-form-background {
+    @extend .intro;
+    @include dead-center(601px, 360px);
   }
 }
 
@@ -64,11 +78,11 @@ hr {
 }
 
 .descriptions {
-  margin: 1rem 0rem;
+  padding: 1rem 0rem;
   &-tour {
     background: $gray;
     padding: 4rem 0rem;
-    border-right: 3px solid $trans-brand;
+    border-right: 2px solid darken($gray, 5%);
   }
   &-know {
     background: $gray;
