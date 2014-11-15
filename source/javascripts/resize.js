@@ -9,3 +9,14 @@ function resizesplash(divId) {
   window.onresize = function() {
     resizesplash();
 };
+
+//splash 
+function resizeprojects() {
+      var heights = window.innerHeight;
+      document.getElementById("signup").style.height = heights -14 + "px";
+  }
+
+  resizeprojects();
+  window.onresize = function() {
+      resizesplash();
+};

@@ -34,14 +34,25 @@ hr {
   display: block;
 }
 
-.intro {
+// navigation
+
+.top-bar {
+  background-color: $trans-black !important;
+  height: 4rem;
+  .title-area {
+    height: 4rem;
+  }
+}
+
+.intro {  
   padding: 2rem;
   @include dead-center(689px, 360px);
   background: $trans-black;
   border: 0.75rem $trans-brand solid;
   @include breakpoint(small) {
-    @include dead-center(320px, 480px);
+    @include dead-center(290px, 370px);
     padding: 1rem 1rem;
+    margin-top: 2rem;
   }
 }
 
@@ -73,7 +84,7 @@ hr {
   }
    &-form-background {
     @extend .intro;    
-    @include dead-center(601px, 360px);
+    @include dead-center(601px, 180px);
     @include breakpoint(small) {
       @include dead-center(320px, 480px);
       padding: 1rem 1rem;

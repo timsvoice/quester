@@ -12,14 +12,17 @@ span.small {
 
 .navigation {
   .branding-title {
-    color: lighten($brand, 20%);
+    color: lighten($brand, 0%);
     font-size: 3rem !important;
+    @include breakpoint(small) {
+      font-size: 3rem !important;
+    }
     line-height: 3rem;
     padding: 0.25rem 1rem;
     .top-bar-section {
       .right > a {
         font-size: 2rem;
-        color: lighten($brand, 20%);
+        color: lighten($brand, 0%);
       }
     }
   }
@@ -36,7 +39,7 @@ span.small {
       margin-bottom: 0;
       margin-top: 0;
       @include breakpoint(small) {
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 6rem;
         margin-bottom: 1rem;
       }
@@ -109,12 +112,16 @@ span.small {
       border-right: 1px $gray solid;
     }
   }
+  &.row {
+    min-width: 100%;
+  }
 }
 
 .signup-form {  
   &-title {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
     color: $brand;
     font-weight: $heavy-text;
     @include breakpoint(small) {

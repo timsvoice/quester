@@ -8,13 +8,13 @@
         margin-right: 1rem;
         a:not(button) {
           background: inherit !important;
-          border: 0.125rem  $trans-brand solid;
+          border: 0.25rem  $trans-brand solid;
           padding: 0.5rem;
           margin-right: 2rem;
           font-size: 1.25rem;
           line-height: 1.25rem;
-          color: lighten($brand, 20%);
-          background: $trans-black;
+          color: lighten($brand, 0%);
+          background: $trans-brand;
           font-family: $text-font;
           font-weight: $heavy-text;
           &:hover {

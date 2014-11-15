@@ -9844,7 +9844,15 @@ hr {
   visibility: visible;
   display: block; }
 
-/* line 37, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+/* line 39, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+.top-bar {
+  background-color: rgba(0, 0, 0, 0.35) !important;
+  height: 4rem; }
+  /* line 42, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  .top-bar .title-area {
+    height: 4rem; }
+
+/* line 47, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
 .intro, .signup-form-background {
   padding: 2rem;
   margin-left: -344.5px;
@@ -9857,54 +9865,55 @@ hr {
   border: 0.75rem rgba(143, 215, 230, 0.5) solid;
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
   @media only screen and (max-width: 40em) {
-    /* line 37, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+    /* line 47, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
     .intro, .signup-form-background {
-      margin-left: -160px;
+      margin-left: -145px;
       position: absolute;
-      top: -240px;
+      top: -185px;
       left: 50%;
-      width: 320px;
+      width: 290px;
       visibility: visible;
-      padding: 1rem 1rem; } }
+      padding: 1rem 1rem;
+      margin-top: 2rem; } }
 
-/* line 48, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+/* line 59, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
 .descriptions {
   background: #f2f3f3; }
 
-/* line 52, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+/* line 63, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
 .signup {
   background-color: #f2f3f3;
   padding: 3rem 2rem 1rem; }
-  /* line 55, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  /* line 66, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
   .signup-intro {
     padding: 2rem 0rem;
     background: #f2f3f3; }
-    /* line 58, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+    /* line 69, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
     .signup-intro p {
       font-size: 2rem;
       color: #3cb9d3;
       font-weight: 200;
       text-align: center; }
-      /* line 63, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+      /* line 74, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
       .signup-intro p span.bold {
         font-weight: 900; }
-  /* line 68, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  /* line 79, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
   .signup-form {
     padding-top: 2rem;
     position: absolute;
     height: 600px;
     min-width: 100% !important; }
-  /* line 74, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  /* line 85, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
   .signup-form-background {
     margin-left: -300.5px;
     position: absolute;
-    top: -180px;
+    top: -90px;
     left: 50%;
     width: 601px;
     visibility: visible;
     /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
     @media only screen and (max-width: 40em) {
-      /* line 74, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+      /* line 85, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
       .signup-form-background {
         margin-left: -160px;
         position: absolute;
@@ -9914,16 +9923,16 @@ hr {
         visibility: visible;
         padding: 1rem 1rem; } }
 
-/* line 84, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+/* line 95, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
 .descriptions {
   padding: 6rem 0rem;
   border-top: 2px rgba(143, 215, 230, 0.5) solid;
   border-bottom: 2px rgba(143, 215, 230, 0.5) solid; }
-  /* line 88, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  /* line 99, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
   .descriptions-tour {
     background: #f2f3f3;
     padding: 4rem 0rem; }
-  /* line 92, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
+  /* line 103, /Users/timsvoice/code/quester/source/stylesheets/partials/_base.scss */
   .descriptions-know {
     background: #f2f3f3;
     padding: 4rem 0rem; }
@@ -9950,16 +9959,21 @@ span.small {
 
 /* line 14, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .navigation .branding-title {
-  color: #e2f5f8;
+  color: #8fd7e6;
   font-size: 3rem !important;
+  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   line-height: 3rem;
   padding: 0.25rem 1rem; }
-  /* line 20, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  @media only screen and (max-width: 40em) {
+    /* line 14, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+    .navigation .branding-title {
+      font-size: 3rem !important; } }
+  /* line 23, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .navigation .branding-title .top-bar-section .right > a {
     font-size: 2rem;
-    color: #e2f5f8; }
+    color: #8fd7e6; }
 
-/* line 30, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 33, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .intro-branding h1 {
   font-family: "Lobster Two", cursive;
   color: #8fd7e6;
@@ -9970,12 +9984,12 @@ span.small {
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */
   font-weight: 900; }
   @media only screen and (max-width: 40em) {
-    /* line 30, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+    /* line 33, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
     .intro-branding h1 {
-      font-size: 5rem;
+      font-size: 4rem;
       line-height: 6rem;
       margin-bottom: 1rem; } }
-/* line 47, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 50, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .intro-biline h3 {
   color: #8fd7e6;
   font-family: "Open Sans", Times, sans-serif;
@@ -9983,12 +9997,12 @@ span.small {
   font-size: 2rem;
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
   @media only screen and (max-width: 40em) {
-    /* line 47, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+    /* line 50, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
     .intro-biline h3 {
       font-size: 1.25rem;
       margin-bottom: 2rem; } }
 
-/* line 61, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 64, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .descriptions h3 {
   font-size: 3rem;
   line-height: 4rem;
@@ -9996,7 +10010,7 @@ span.small {
   text-transform: uppercase;
   font-weight: 900;
   text-align: center; }
-/* line 69, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 72, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .descriptions p {
   text-align: center;
   color: #0c2f36;
@@ -10004,17 +10018,17 @@ span.small {
   font-size: 1.75rem;
   font-family: "Open Sans", Times, sans-serif; }
 
-/* line 79, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 82, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .details-item {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
   border-top: 2px rgba(143, 215, 230, 0.5) solid;
   width: 100%;
   height: 100%; }
-  /* line 85, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  /* line 88, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .details-item:hover {
     background: #e2f5f8; }
-  /* line 88, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  /* line 91, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .details-item i {
     font-size: 3.5rem;
     width: 100%;
@@ -10023,37 +10037,41 @@ span.small {
     color: #299cb3;
     font-weight: 200;
     margin: auto 0rem; }
-  /* line 98, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  /* line 101, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .details-item p {
     text-align: center;
     color: #0c2f36;
     font-weight: 200;
     font-size: 1.25rem;
     font-family: "Open Sans", Times, sans-serif; }
-  /* line 105, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  /* line 108, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .details-item:nth-child(odd) {
     border-right: 1px #f2f3f3 solid; }
-  /* line 108, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+  /* line 111, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
   .details-item:nth-child(even) {
     border-right: 1px #f2f3f3 solid; }
-
 /* line 115, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+.details.row {
+  min-width: 100%; }
+
+/* line 121, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .signup-form-title {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
   color: #8fd7e6;
   font-weight: 900;
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
   @media only screen and (max-width: 40em) {
-    /* line 115, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+    /* line 121, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
     .signup-form-title {
       font-size: 1.5rem; } }
-/* line 124, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+/* line 131, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
 .signup-form p {
   color: #8fd7e6;
   /* max-width 640px, mobile-only styles, use when QAing mobile issues */ }
   @media only screen and (max-width: 40em) {
-    /* line 124, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
+    /* line 131, /Users/timsvoice/code/quester/source/stylesheets/partials/_typography.scss */
     .signup-form p {
       font-size: 0.75rem; } }
 
@@ -10088,13 +10106,13 @@ span.small {
       /* line 9, /Users/timsvoice/code/quester/source/stylesheets/partials/_navigation.scss */
       .navigation .top-bar-section ul a:not(button) {
         background: inherit !important;
-        border: 0.125rem rgba(143, 215, 230, 0.5) solid;
+        border: 0.25rem rgba(143, 215, 230, 0.5) solid;
         padding: 0.5rem;
         margin-right: 2rem;
         font-size: 1.25rem;
         line-height: 1.25rem;
-        color: #e2f5f8;
-        background: rgba(0, 0, 0, 0.35);
+        color: #8fd7e6;
+        background: rgba(143, 215, 230, 0.5);
         font-family: "Open Sans", Times, sans-serif;
         font-weight: 900; }
         /* line 20, /Users/timsvoice/code/quester/source/stylesheets/partials/_navigation.scss */
@@ -10132,7 +10150,7 @@ span.small {
 
 /* line 13, /Users/timsvoice/code/quester/source/stylesheets/partials/_media.scss */
 .signup-background {
-  background: url(https://s3.amazonaws.com/questernyc/garcon-dark.png) no-repeat center center;
+  background: url(https://s3.amazonaws.com/questernyc/brookbridge.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10140,9 +10158,10 @@ span.small {
   overflow: none;
   margin: 0;
   padding: 0;
-  height: 100%; }
+  height: 100%;
+  min-height: 601px; }
 
-/* line 25, /Users/timsvoice/code/quester/source/stylesheets/partials/_media.scss */
+/* line 26, /Users/timsvoice/code/quester/source/stylesheets/partials/_media.scss */
 img.book {
   max-width: 350px;
   -ms-transform: rotate(-12deg);
