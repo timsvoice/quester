@@ -1,8 +1,8 @@
 
-middleman-sass-foundation
+Quester
 =========================
 
-A [Middleman](http://middlemanapp.com/) template built with [ZURB Foundation](http://foundation.zurb.com/) and [Sass Way](http://thesassway.com/beginner/how-to-structure-a-sass-project) folder structure
+A [Middleman](http://middlemanapp.com/) site built with [ZURB Foundation](http://foundation.zurb.com/) and [Sass Way](http://thesassway.com/beginner/how-to-structure-a-sass-project) folder structure
 
 Thanks to [axyz](https://github/axyz) who's [Middleman ZURB Foundation template](https://github.com/axyz/middleman-zurb-foundation) provided the main structure and [ZURB Foundation](http://foundation.zurb.com/) integration method detailed below.
 
